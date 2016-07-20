@@ -22,8 +22,10 @@ WORKDIR /src
 ENV TOOLCHAIN_BASE_DIR /opt
 ENV TOOLCHAIN_VERSION 1
 ENV TARGET arm-unknown-linux-gnueabi
+ENV HOST ${TARGET}
 ENV TOOLCHAIN_IMAGE ${TARGET}_v${TOOLCHAIN_VERSION}.squash
 ENV TOOLCHAIN_PATH ${TOOLCHAIN_BASE_DIR}/x-tools
+ENV LD_LIBRARY_PATH ${TOOLCHAIN_BASE_DIR}/x-tools/${TARGET}/sysroot/lib
 
 ####################################################################################################
 

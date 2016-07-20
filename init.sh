@@ -7,5 +7,9 @@ do
 	ln -s ${FILE} ${LINK}
 done
 
+ln -s ${LD_LIBRARY_PATH}/ld-linux.so.3 /lib/ld-linux.so.3
+
+export PATH=${PATH}:${TOOLCHAIN_PATH}/bin
+
 cmd="${@:-bash}"
 eval "$cmd"
