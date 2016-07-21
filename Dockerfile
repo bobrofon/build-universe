@@ -5,7 +5,9 @@ FROM debian:stable
 RUN apt-get update && \
 	apt-get install -y --no-install-recommends \
 		binfmt-support \
-		qemu-user-static && \
+		qemu-user-static \
+		make \
+		file && \
 	apt-get clean && \
 	rm -rf /var/lib/apt/lists/*_dists_*
 
