@@ -33,6 +33,7 @@ ENV LD_LIBRARY_PATH ${TOOLCHAIN_BASE_DIR}/x-tools/${TARGET}/sysroot/lib
 
 ADD x-tools/${TOOLCHAIN_IMAGE} ${TOOLCHAIN_BASE_DIR}/
 RUN mkdir -p ${TOOLCHAIN_PATH}
-ADD init.sh /init.sh
+ADD files/init.sh /init.sh
+ADD files/gcc-static /bin/gcc-static
 
 ENTRYPOINT ["/init.sh"]

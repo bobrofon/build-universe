@@ -1,0 +1,4 @@
+#! /bin/sh
+
+CMD="gcc -s -static -static-libgcc -static-libstdc++ -static-libasan -static-libtsan -static-liblsan -static-libubsan -static-libmpx -static-libmpxwrappers ${@}"
+eval "${CMD}"
