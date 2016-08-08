@@ -28,7 +28,8 @@ ENV TARGET arm-unknown-linux-gnueabi
 ENV HOST ${TARGET}
 ENV TOOLCHAIN_IMAGE ${TARGET}_v${TOOLCHAIN_VERSION}.squash
 ENV TOOLCHAIN_PATH ${TOOLCHAIN_BASE_DIR}/x-tools
-ENV LD_LIBRARY_PATH ${TOOLCHAIN_BASE_DIR}/x-tools/${TARGET}/sysroot/lib
+ENV CROSS_SYSROOT ${TOOLCHAIN_PATH}/${TARGET}/sysroot
+ENV LD_LIBRARY_PATH ${CROSS_SYSROOT}/lib
 
 ####################################################################################################
 
