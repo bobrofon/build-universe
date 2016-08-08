@@ -7,7 +7,8 @@ RUN apt-get update && \
 		binfmt-support \
 		qemu-user-static \
 		make \
-		file && \
+		file \
+		perl && \
 	apt-get clean && \
 	rm -rf /var/lib/apt/lists/*_dists_*
 
