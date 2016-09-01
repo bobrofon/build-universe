@@ -8,7 +8,8 @@ RUN apt-get update && \
 		qemu-user-static \
 		make \
 		file \
-		perl && \
+		perl \
+		pkg-config && \
 	apt-get clean && \
 	rm -rf /var/lib/apt/lists/*_dists_*
 
