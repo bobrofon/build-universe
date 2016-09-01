@@ -9,7 +9,9 @@ RUN apt-get update && \
 		make \
 		file \
 		perl \
-		pkg-config && \
+		pkg-config \
+		gettext \
+		python && \
 	apt-get clean && \
 	rm -rf /var/lib/apt/lists/*_dists_*
 
