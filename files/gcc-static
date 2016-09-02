@@ -1,3 +1,5 @@
 #! /bin/sh
 
+set -eu
+
 gcc -fPIC -s -static -static-libgcc -static-libstdc++ -static-libasan -static-libtsan -static-liblsan -static-libubsan -static-libmpx -static-libmpxwrappers $@
