@@ -24,5 +24,7 @@ ln -s ${LD_LIBRARY_PATH}/ld-linux.so.3 /lib/ld-linux.so.3
 
 export PATH=${PATH}:${TOOLCHAIN_PATH}/bin
 
+dpkg-reconfigure qemu-user-static > /dev/null 2>&1
+
 CMD="${@:-bash}"
 su ${USER} -c "${CMD}"

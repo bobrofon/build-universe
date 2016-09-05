@@ -15,9 +15,6 @@ RUN apt-get update && \
 	apt-get clean && \
 	rm -rf /var/lib/apt/lists/*_dists_*
 
-
-RUN echo "dpkg-reconfigure qemu-user-static > /dev/null 2>&1" >> /etc/bash.bashrc
-
 ####################################################################################################
 
 VOLUME /src
