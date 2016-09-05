@@ -1,7 +1,5 @@
 #! /bin/bash
 
-set -eu
-
 ABSOLUTE_PATH="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 ARCH=${1:-'arm'}
