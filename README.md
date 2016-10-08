@@ -12,7 +12,7 @@ $ ./build.sh arm
 ```
 ## Activate environment
 ```
-$ . activate.sh
+$ . activate.sh arm
 ```
 Now you can run commands in build environment using 'run'.
 ```
@@ -22,3 +22,5 @@ gcc (GCC) 6.2.1 20160916 (Red Hat 6.2.1-2)
 $ run gcc --version
 gcc (crosstool-NG crosstool-ng-1.22.0) 5.2.0
 ```
+# Dependencies
+* [Docker](https://www.docker.com)
