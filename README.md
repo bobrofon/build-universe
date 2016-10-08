@@ -1,4 +1,4 @@
-[![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](https://github.com/bobrofon/build-universe/blob/master/LICENSE)
+[![Build Status](https://travis-ci.org/bobrofon/build-universe.svg?branch=master)](https://travis-ci.org/bobrofon/build-universe) [![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](https://github.com/bobrofon/build-universe/blob/master/LICENSE)
 # build-universe
 Build environement for standalone elf binaries.
 # Supported architectures
