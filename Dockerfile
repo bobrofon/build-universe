@@ -7,6 +7,7 @@ RUN apt-get update && \
 		binfmt-support \
 		qemu-user-static \
 		make \
+		autoconf \
 		file \
 		perl \
 		pkg-config \
