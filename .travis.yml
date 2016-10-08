@@ -1,0 +1,12 @@
+sudo: required
+
+services:
+  - docker
+
+script:
+  - ./build.sh arm
+  - . activate.sh arm
+  - run gcc --version
+  - ./build.sh i686
+  - . activate.sh i686
+  - run gcc --version
