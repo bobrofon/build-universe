@@ -1,4 +1,4 @@
-FROM debian:stable
+FROM debian:sid
 
 ####################################################################################################
 
@@ -12,6 +12,7 @@ RUN apt-get update && \
 		perl \
 		pkg-config \
 		gettext \
+		meson \
 		python && \
 	apt-get clean && \
 	rm -rf /var/lib/apt/lists/*_dists_*
