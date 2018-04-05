@@ -7,6 +7,8 @@ RUN apt-get update && \
 		binfmt-support \
 		qemu-user-static \
 		make \
+		ninja-build \
+		cmake \
 		autoconf \
 		file \
 		perl \
