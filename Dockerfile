@@ -10,6 +10,9 @@ RUN apt-get update && \
 		ninja-build \
 		cmake \
 		autoconf \
+		automake \
+		libtool \
+		libltdl-dev \
 		file \
 		perl \
 		pkg-config \
