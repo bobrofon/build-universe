@@ -6,6 +6,10 @@ UID=$1
 shift
 GID=$1
 shift
+ROOT=$1
+shift
+WORKING_DIRECTORY=$1
+shift
 
 USER=hostuser
 GROUP=hostgroup
@@ -25,6 +29,10 @@ ln -s ${LD_LIBRARY_PATH}/ld-linux.so.3 /lib/ld-linux.so.3
 export PATH=${PATH}:${TOOLCHAIN_PATH}/bin
 
 dpkg-reconfigure qemu-user-static > /dev/null 2>&1
+
+mkdir -p ${ROOT}
+mount --bind ${PWD} ${ROOT}
+cd ${WORKING_DIRECTORY}
 
 CMD="${@:-bash}"
 su ${USER} -c "${CMD}"
