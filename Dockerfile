@@ -49,4 +49,10 @@ RUN mkdir -p ${TOOLCHAIN_PATH}
 ADD files/init.sh /init.sh
 ADD files/gcc-static /bin/gcc-static
 
+####################################################################################################
+
+ENV QEMU_BIN_DIR=/usr/bin
+ADD qemu-user-static/register/register.sh /register
+ADD qemu-user-static/register/qemu-binfmt-conf.sh /qemu-binfmt-conf.sh
+
 ENTRYPOINT ["/init.sh"]

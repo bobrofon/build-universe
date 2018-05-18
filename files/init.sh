@@ -28,7 +28,7 @@ ln -s ${LD_LIBRARY_PATH}/ld-linux.so.3 /lib/ld-linux.so.3
 
 export PATH=${PATH}:${TOOLCHAIN_PATH}/bin
 
-dpkg-reconfigure qemu-user-static > /dev/null 2>&1
+/register --reset > /dev/null 2>&1
 
 mkdir -p ${ROOT}
 mount --bind ${PWD} ${ROOT}
