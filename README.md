@@ -3,7 +3,9 @@
 Build environement for standalone elf binaries.
 # Supported architectures
 * arm
+* aarch64
 * i686
+* x86_64
 
 # How to use
 ## Build docker container for build environment
