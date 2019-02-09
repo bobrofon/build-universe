@@ -17,6 +17,8 @@ GROUP=hostgroup
 groupadd --gid ${GID} ${GROUP}
 useradd --no-user-group --no-create-home --uid=${UID} --gid=${GID} ${USER}
 
+export LD_LIBRARY_PATH="/lib/x86_64-linux-gnu:${LD_LIBRARY_PATH}"
+
 mount ${TOOLCHAIN_BASE_DIR}/${TOOLCHAIN_IMAGE} ${TOOLCHAIN_PATH}
 for FILE in ${TOOLCHAIN_PATH}/bin/${TARGET}-*
 do
