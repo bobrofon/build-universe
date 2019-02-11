@@ -8,8 +8,14 @@ case "${ARCH}" in
 	'arm')
 		TARGET='arm-unknown-linux-gnueabi'
 		;;
+	'aarch64')
+		TARGET='aarch64-unknown-linux-gnueabi'
+		;;
 	'i686')
 		TARGET='i686-unknown-linux-gnu'
+		;;
+	'x86_64')
+		TARGET='x86_64-unknown-linux-gnu'
 		;;
 	*)
 		echo "Unexpected arch"

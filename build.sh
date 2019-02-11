@@ -15,9 +15,17 @@ case "${ARCH}" in
 		TARGET='arm-unknown-linux-gnueabi'
 		OS_COMPILER='linux-armv4'
 		;;
+	'aarch64')
+		TARGET='aarch64-unknown-linux-gnueabi'
+		OS_COMPILER='linux-aarch64'
+		;;
 	'i686')
 		TARGET='i686-unknown-linux-gnu'
 		OS_COMPILER='linux-generic32'
+		;;
+	'x86_64')
+		TARGET='x86_64-unknown-linux-gnu'
+		OS_COMPILER='linux-generic64'
 		;;
 	*)
 		echo 'Unexpected arch'

@@ -7,6 +7,12 @@ script:
   - ./build.sh arm
   - . activate.sh arm
   - run gcc --version
+  - ./build.sh aarch64
+  - . activate.sh aarch64
+  - run gcc --version
   - ./build.sh i686
   - . activate.sh i686
+  - run gcc --version
+  - ./build.sh x86_64
+  - . activate.sh x86_64
   - run gcc --version
